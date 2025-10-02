@@ -1,0 +1,12 @@
+<script>
+alert("Bem vindo ao jogo - Adivinhe o número!");
+var numPensadoComCasasDecimais = Math.random()*100;
+var numeroPensado = Math.round(numPensadoComCasasDecimais);
+console.log(numeroPensado);
+var chute = Number(prompt("Já pensei, qual você acha que é o número que escolhi de 0 a 100?"));
+if (chute == numeroPensado) {
+	document.write("UAU! Parabéms, você acertou!!!");
+	} else {
+		document.write("Uma pena...Você errou, tente novamente");
+		}
+</script>
