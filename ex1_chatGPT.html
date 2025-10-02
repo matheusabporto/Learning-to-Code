@@ -1,0 +1,18 @@
+Crie um programa em Javascript que pergunte o nome e a idade de duas pessoas e calcule a diferença de idade entre elas e a média das idades. Mostre na tela o resultado de forma organizada.
+<br><hr><br>
+
+<script>
+  //declaração de variáveis
+  var nome1, nome2, idade1, idade2, diferença, media;
+  //entrada de dados
+  nome1 = prompt("Qual o nome da pessoa 1?");
+  idade1 = Number(prompt("Qual a idade da pessoa 1?"));
+  nome2 = prompt("Qual o nome da pessoa 2?");
+  idade2 = Number(prompt("Qual a idade da pessoa 2?"));
+  //processamento de dados
+  diferença = idade1 - idade2;
+  media = (idade1 + idade2)/2;
+  //saída do resultado
+  document.write("A diferença de idade entre as duas pessoas é = " + diferença + " anos! <br>");
+  document.write("A media de idade das duas pessoas é = " + media.toFixed(2) + " anos!");
+</script>

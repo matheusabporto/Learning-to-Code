@@ -1,0 +1,36 @@
+Um banco está oferecendo uma oportunidade para seus clientes. Caso o cliente tenha interesse em um empréstimo,
+o valor só será aprovado caso seja no máximo cinco vezes o valor do salário atual do cliente. Você foi escolhido para fazer esse programa.
+Então solicite o valor do empréstimo e o valor atual do salário do cliente, confira se os valores são adequados à condição imposta pelo banco. 
+Caso seja, informe ao cliente que o empréstimo foi aceito, caso contrário, informe que o empréstimo foi negado. 
+Seja qual for o caso, o cliente deve receber a frase: Obrigado por nos consultar!
+
+<br><hr><br>
+<meta charset = "UTF-8">
+<script>
+//variaveis
+var empr, sal;
+//funções
+function pulaLinha(){
+	document.write("<br>");
+	}
+function mostra(frase){
+	document.write(frase);
+	pulaLinha();
+	}
+//entrada de dados
+sal = Number(prompt("Informe o valor do seu salário, em Reais."));
+empr = Number(prompt("Informe o valor do empréstimo desejado, em Reais."));
+
+//processamento de dados
+
+
+//saída de dados
+
+if (empr > 5*sal){
+    mostra("Infelizmente seu empréstimo no valor de R$ " + empr.toFixed(2) + " Reais foi negado, o valor solicitado foi muito alto. Tente um valor menor!");
+	}   else{
+	    mostra("Seu empréstimo no valor de R$ " + empr.toFixed(2) + " Reais foi aceito!");
+	  }
+
+mostra("Obrigado por nos consultar!");
+</script>

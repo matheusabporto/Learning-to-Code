@@ -1,0 +1,44 @@
+O custo ao consumidor de um carro novo é a soma do preço de fábrica com o percentual de lucro do distribuidor e dos impostos aplicados ao preço de fábrica.
+ Faça um programa que solicite o preço de fábrica de um veículo, o percentual de lucro do distribui-dor e o percentual de impostos, calcule e mostre:
+a) o valor correspondente ao lucro do distribuidor;
+b) o valor correspondente aos impostos;
+c) o preço final do veículo.
+
+<br><hr><br>
+
+<meta charset = "UTF-8">
+
+<script>
+
+//variaveis
+var pt, pf, ld, imp, vld, vimp; 
+
+//funcoes
+function pulaLinha(){
+document.write("<br>");
+}
+function mostra(frase){
+document.write(frase);
+pulaLinha();
+}
+
+//entrada de dados
+
+pf = Number(prompt("Informe o preço de fábrica do veículo, em Reais:"));
+ld = Number(prompt("Informe o percentual de lucro do distribuidor."));
+imp = Number(prompt("Informe o percentual de impostos sobre o veículo."));
+
+//processamento de dados
+
+vld = pf*(ld/100);
+vimp = pf*(imp/100);
+pt = pf+vld+vimp;
+
+
+//saida de dados
+
+mostra("O valor correspondente ao lucro do distribuidor foi de: R$ " + vld.toFixed(2) + " Reais.");
+mostra("O valor Correspondente aos impostos foi de: R$ " + vimp.toFixed(2) + " Reais.");
+mostra("O preço final do carro foi de: R$ " + pt.toFixed(2) + " Reais."); 
+
+</script>

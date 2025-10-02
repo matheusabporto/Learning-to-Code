@@ -1,0 +1,47 @@
+Faça um programa que solicite a hora do início de um jogo e a hora do término (cada hora é composta por duas variáveis: hora e minuto), 
+calcule e mostre a duração do jogo (horas e minutos), sabendo que o tempo máximo de duração do jogo é de 24 horas e que ele pode começar em um dia e terminar no dia seguinte.
+<br><hr><br>
+
+<meta charset = "UTF-8">
+
+<script>
+
+//variaveis
+var hri, min, hif, hrt, mt, htf, djh, djmin;
+
+//funcoes
+function pulaLinha(){
+document.write("<br>");
+}
+function mostra(frase){
+document.write(frase);
+pulaLinha();
+}
+
+//entrada de dados
+
+hri = Number(prompt("Qual foi a hora que o jogo começou? Atenção! Colocar apenas a hora e no formato de 24hrs!"));
+min = Number(prompt("Em quantos minutos a hora estava quando o jogo começou? Atenção! Colocar apenas os minutos!"));
+hrt = Number(prompt("Qual foi a hora que o jogo terminou? Atenção! Colocar apenas a hora!"));
+mt = Number(prompt("Em quantos minutos a hora estava quando o jogo terminou? Atenção! Colocar apenas os minutos!"));
+
+//processamento de dados
+
+djh = hrt-hri;
+djmin = min-mt;
+
+//saida de dados
+if(djh>=0 && mt>min){
+mostra("A partida teve " + djh + " horas e " + djmin + " minutos de duração");
+	}else if (djh>=0 && mt<min){
+		("A partida teve " + djh + " horas e " + (djmin+60) + " minutos de duração")
+		}else if(djh<0 && mt>min){
+			("A partida teve " + (djh+24) + " horas e " + djmin + " minutos de duração");
+			} else if(djh<0 && mt<min){
+				("A partida teve " + (djh+24) + " horas e " + (djmin+60) + " minutos de duração")
+				} else {
+			mostra("Comando inserido invalido");
+			}
+
+	
+</script>

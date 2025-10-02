@@ -1,0 +1,49 @@
+Tarefinha de casa: Faça um programa que solicita 2 valores quaisquer, e um símbolo relacionado a uma operação matemática (+, -, *, /). O programa deve informar a operação escolhida (soma, subtração, multiplicação ou divisão) e apresentar o resultado final.
+<br><hr><br>
+
+<meta charset = "UTF-8">
+
+<script>
+  // variaveis
+  var n1, n2, simb, resultado;
+  // funcoes
+  function pulaLinha(){
+    document.write("<br>");
+  }
+  function mostra(frase){
+    document.write(frase);
+    pulaLinha();
+  }
+  //entrada de dados
+  n1 = Number(prompt("Informe um número par ser utilizado em uma operação matemática"));
+  n2 = Number(prompt("Informe outro número para ser utilizado na operação matemática"));
+  simb = prompt("Informe o símbolo da operação matemática desejada. + = soma; - = subtração; * = multiplicação; / = divisão");
+  //processamento de dados
+  if(simb == "+"){
+    resultado = n1+n2;
+    mostra("A operação escolhida foi SOMA e o resultado foi = " + resultado);
+    } else if(simb == "-"){
+      resultado = n1-n2;
+      mostra("A operação escolhida foi SUBTRAÇÃO e o resultado foi = " + resultado);
+      }   else if(simb == "*"){
+          resultado = n1*n2;
+          mostra("A operação escolhida foi MULTIPLICAÇÃO e o resultado foi = " + resultado);
+          } else if(simb == "/"){
+              if (n2 == 0){
+              mostra("Operação de divisão IMPOSSÍVEL, pois não se divide por 0!");
+              } else {
+            resultado = n1/n2;
+            mostra("A operação escolhida foi DIVISÃO e o resultado foi = " + resultado);
+            }
+          } else {
+            mostra ("Operação Desconhecida!");
+          }
+ 
+  }
+</script>
+
+não estou conseguindo usar esse ultimo else, tente usar
+
+// coloque depois 
+      if (simb != "+" && simb != "-" && simb != "*" && simb != "/"){
+      mostra("Símbolo de operação matemática inválido");

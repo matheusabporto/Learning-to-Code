@@ -1,0 +1,15 @@
+Crie um programa que solicite o peso em Kg e a altura em metros de uma pessoa. O programa deve calcular e apresentar o IMC da pessoa. IMC = peso/alura2
+<br><hr><br>
+<script>
+  //Declaração de Variáveis
+  var peso, altura, imc;
+  //Entrada de dados
+  peso = prompt("Informe o peso da pessoa em Kg.");
+  altura = prompt("Informe a altura da pessoa em metros. Use ponto em vez de vírgula");
+  //Processamento de dados
+    imc = peso/(altura*altura);
+  //Saída de resultados
+  document.write("IMC = " + imc + "<br>");
+  document.write("IMC = " + imc.toFixed(3) + "<br");
+  document.write("IMC = " + Math.round(imc));
+</script>

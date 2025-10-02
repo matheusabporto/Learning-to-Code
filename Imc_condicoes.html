@@ -1,0 +1,37 @@
+Faça um programa que solicite o peso, em Kg, e a altura, em metros. Calcule o Imc e informe a situação que a pessoa se encontra.
+<br><hr><br>
+<meta charset "UTF-8">
+
+<script>
+  //variaveis
+  var peso, altura, imc;
+  //funções
+  function pulaLinha(){
+    document.write("<br>");
+  }
+  function mostra(frase){
+    document.write(frase);
+    pulaLinha();
+  }
+  //entrada de dados
+  peso = Number(prompt("Informe o seu peso, em Kg."));
+  altura = Number(prompt("Infomre a sua altura, em m"));
+  //processamento de dados
+  imc = peso/(altura**2);
+  console.log("IMC: " + imc.toFixed(1));
+  //condições
+  if(imc<18.5){// else if é um limitante, entao pode ser feito desse modo alternativo
+    mostra("Você está abaixo do peso");
+    } else if(imc>=18.5&&imc<25){ //ou else if(imc<25){ 
+      mostra("Você está com um peso saudável!");
+      } else if(imc>=25&&imc<30){ //ou else if(imc<30{
+        mostra("Você está com sobrepeso.");
+        } else if(imc>=30&&imc<35){ //ou else if(imc<35){
+          mostra("Você está com Obesidade Classe 1");
+          } else if(imc>=35&&imc<40){ //ou else if(imc<40){
+            mostra("Você está com Obesidade Classe 2");
+            } else { //ou else if(imc>=40){
+              mostra("Você está com Obesidade Classe 3");
+              }
+  //saida de dados
+</script>

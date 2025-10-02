@@ -1,0 +1,40 @@
+A questão pede um programa que calcule o salário de um consultor com
+base nas seguintes regras:
+1. Salário mínimo fixo: R$ 1.000,00.
+2. Salário bruto = número de horas trabalhadas x (1/10 do salário
+mínim0).
+o Ou seja: cada hora trabalhada vale R$ 100.
+3. Valor da hora extra = (1/2 do salário minimo).
+o Ou seja: cada hora extra vale R$ 500.
+4. Imposto = 10% do salario bruto.
+5. Salário a receber = sala rio bruto -+ valor total das horas extras -
+imposto.
+<br><hr><br>
+
+<script>
+//declaração de variaveis
+var hrT, HrE, salhrT, salhrE, imp, salRec, salM;
+//declaração de funções
+function pulaLinha(){
+  document.write("<br>");
+  }
+function mostra(frase){
+  document.write(frase);
+  pulaLinha;
+}
+//entrada de dados
+hrT = Number(prompt("Informe o número de horas trabalhadas."));
+hrE = Number(prompt("Informe o número de horas extras trabalhadas."));
+
+//processamento de dados
+salM = 1000;
+salhrT = hrT*(salM/10);
+salhrE = hrE*(salM/5);
+imp = (salhrT/10);
+salRec = (salhrT + salhrE - imp);
+
+
+//saída de resultado
+mostra("O salário nesse mês será de: R$" + salRec + " Reais.");
+
+</script>

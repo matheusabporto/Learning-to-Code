@@ -1,0 +1,30 @@
+Escreva um programa que solicita as notas da AV1 e Av2, calcula e apresenta a média aritmética delas. Essa média é chamada de média parcial. Caso a média parcial seja pelo menos 4, o aluno está apto a seguir para a AV3. Caso a média obtida seja menor que 4, o aluno já está reprovado no meio do semestre. o programa deve informar a média parcial obtida e se o aluno segue ou não para a AV3.
+<br><hr><br>
+
+<meta charset = "UTF-8">
+
+<script>
+  //declaração de váriaveis
+  var av1, av2, Mp
+  //declaração de funções
+  function pulaLinha() {
+    document.write("<br>");
+  }
+  function mostra(frase){
+    document.write(frase);
+    pulaLinha();
+  }
+  //entrada de dados
+  av1 = Number(prompt("Qual a nota da AV1?"));
+  av2 = Number(prompt("Qual a nota da AV2?"));
+  //processamento de dados
+  Mp = (av1+av2)/2
+  //declaração de condicionais e saida de dados
+  mostra("Sua Média parcial é: " + Mp.toFixed(1) + " pontos");
+  if(Mp >= 4){ 
+    mostra("Você está apto a seguir para realização da AV3!");
+  } else {
+    mostra("Você está Reprovado.");
+  }
+  
+</script>

@@ -1,0 +1,19 @@
+Escreva um programa que solicite a idade para cada um dos integrantes de um grupo de 10 pessoas. O seu programa deve calcular e apresentar a média de idade desse grupo.
+<br><hr><br>
+
+<script>
+ //1. 10 pessoas
+//2. perguntar a idade
+//2.1. colocar a variavel de soma.
+//2.2. colcoar a variavel de contagem.
+//3. mostrar o valor
+
+  var cont = 1, soma = 0, idade, media;
+  while(cont<=10) {
+    idade = Number(prompt("Qual a idade do integrante?"));
+    soma = soma + idade; // soma += idade;
+    cont = cont + 1; // cont++;
+    }
+  media = soma/10;
+  document.write("A média de idade desse grupo é: " + media.toFixed(1) + " anos");
+</script>

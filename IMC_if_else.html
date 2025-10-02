@@ -1,0 +1,30 @@
+Crie um programa que solocite o peso em Kg e a altura em metros de uma pessoa. O programa deve calcular e apresentar o IMc da pessoa. IMC = peso/altura². O programa deve ainda informar se a pessoa está saudável (IMC menor que 25) ou acima do peso.
+<br><hr><br>
+
+<meta charset = "UTF-8">
+
+<script>
+  //variáveis
+  var peso, altura, imc
+  //funções
+  function pulaLinha(){
+    document.write("<br>");
+  }
+  function mostra(frase){
+    document.write(frase);
+    pulaLinha();
+  }
+  //entrada de dados
+  peso = Number(prompt("Informe o peso em Kg"));
+  altura = Number(prompt("Informe a altura em metros"));
+  //processamento de dados
+  imc = peso/(altura**2);
+  //saída de dados
+  mostra("Seu IMC é: " + imc.toFixed(1) + " pontos.");
+  if(imc < 25){
+    mostra("Você é considerada uma pessoa saudável!");
+  } else{
+    mostra("Você está acima do peso!");
+  }
+    
+</script>

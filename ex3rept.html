@@ -1,0 +1,26 @@
+Dado um conjunto de n números, calcular a soma
+desses números. Assumir que n é maior ou igual a
+zero.
+
+1. Solicitar a quantidade de números que serão lidos, ou seja, o valor de n.
+2. Criar uma váriavel com função de acumulação. (inicialização da váriável que vai acumular os números).
+3. Criar uma váriavel de contagem (inicialização da váriavel com função de contagem de repetições
+4. ENQUANTO ainda houver número para ser solicitado
+  4.1 solicitar o valor do número
+  4.2 somar esse valor aos demais valores que estão na váriavel de acúmulo<br>
+  4.3 Incrementar a váriavel de contagem
+5. Apresentar o valor da soma.
+<br><hr><br>
+
+<script>
+var n = Number(prompt("Informe a quantidade de números que serão lidos"));
+var soma = 0;
+var cont = 1;
+while(cont <= n) {
+  var num = Number(prompt("informe um valor"));
+  soma = soma + num;
+  cont = cont + 1;
+}
+document.write("O valor da soma de todos os números apresentados é: " + soma);
+
+</script>

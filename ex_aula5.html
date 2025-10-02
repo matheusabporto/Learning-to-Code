@@ -1,0 +1,25 @@
+Faça um programa que solicite as duas dimensões de um aposento. O programa deve calcular e apresentar a área do espaço. Além disso, o programa deve definir quantas Lâmpadas de 6 W precisam ser colocadas no ambiente para garantir uma boa iluminação. Considere a relação de 1m² precisa de 2.5 W de potência luminosa.
+<br><hr><br>
+<Script>
+//Declaração de Variável
+var altura, largura, area, lampada;
+//declaração de função
+function pulaLinha(){
+  document.write("<br>");
+}
+function mostra(frase){
+  document.write(frase);
+  pulaLinha();
+}
+// Entrada de dados
+comprimento = Number(prompt("Qual o comprimento do aposento, em m."));
+largura = Number(prompt("Qual a largura do aposento, em m."));
+//Processamento de dados
+area = largura*comprimento;
+lampada = (area*2.5)/6;
+//Saída de resultado
+mostra("O aposento possui " + area.toFixed(1) + " m².");
+mostra("Você precisa de " + Math.ceil(lampada) + " lâmpadas para iluminar este cômodo.");
+//se quisesse o numero inferior, a função utilizada deveria ser Math.floor 
+</script>
+

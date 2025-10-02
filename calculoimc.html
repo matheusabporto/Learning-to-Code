@@ -1,0 +1,14 @@
+<script>
+var peso = 91;
+var altura = 1.81;
+var imc = peso / (altura*altura);
+var mostra = function(frase) {
+    document.write(frase + "<br>");
+};
+var calculaIMC = function(peso,altura) {
+    var imc = peso / (altura*altura);
+    return imc;
+};
+var imc = calculaIMC(altura,peso);
+mostra("Meu IMC é: " + Math.round(imc));
+</script>

@@ -1,0 +1,21 @@
+Crie um programa que solicite as notas das 3 etapas, calcule e apresente a média aritmética do aluno.
+<br><hr><br>
+<script>
+  //Declaração de variáveis
+  var AV1, AV2, AV3, Media
+  //Entrada de dados
+  //em 2 passos
+ AV1 = prompt("Informe a nota da AV1");
+ AV1 = Number(AV1);
+ //em 1 passo
+ AV2 = Number(prompt("Informe a nota da AV2."));
+ AV3 = parseFloat(prompt("Informe a nota da AV3."));
+  //Processamento de dados
+  Media = (AV1 + AV2 + AV3)/3;
+  //Saída de resultados
+  document.write("Sua media e = " + Media + " !<br>");
+  document.write("Sua media e = " + Media.toFixed(2) + " !<br>");
+  document.write("Sua media e = " + Math.round(Media) + " !");
+</script>
+
+// <meta charset = "UTF - 8"> - Isso aqui é utilizado para poder ler os acentos. depois pesquisar mais para ver como usar. Os exemplos da professora estão no AVA

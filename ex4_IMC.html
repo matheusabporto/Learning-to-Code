@@ -1,0 +1,23 @@
+crie um programa, perguntando o nome, peso(em Kg) e altura(em m) e calcule o IMC, mostrando uma mensagem na tela com a resposta.
+<br><hr><br>
+
+<script>
+  //declaração de variaveis
+  var nome, peso, altura, imc;
+  //declaração de função
+  function pulaLinha(){
+    document.write("<br>");
+  }
+  function mostra(frase){
+    document.write(frase);
+    pulaLinha();
+  }
+  //entrada de dados
+nome = prompt("Qual o seu nome?");
+peso = Number(prompt("Qual o seu peso(Kg)?"));
+altura = Number(prompt("Qual sua altura(m)?"));
+  //processamento de dados
+imc = peso/(altura*altura);
+  //saida do resultado
+mostra("Olá, " + nome + ". Seu IMC é " + imc.toFixed(2) + "!");
+</script>

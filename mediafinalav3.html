@@ -1,0 +1,43 @@
+1. Solicitar av1 e av2
+2. calcular media parcial mp = (av1+av2)/2
+  2.1. se (mp>4), 
+    solicitar AV3
+    calcular MF mf = (av3+Mp)/2
+        se (MF >= 5 e AV3 >=4) = aprovado
+        senao = reprovado
+      senao reprovado
+<br><hr><br>
+
+<meta charset "UTF-8">
+<script>
+  //declaração de variaveis
+  var av1, av2, mp, av3, mf;
+  //declaração de funções
+  function pulaLinha(){
+    document.write("<br");
+    }
+  function mostra(frase){
+    document.write(frase);
+    pulaLinha();
+  }
+  //entrada de dados
+  av1 = Number(prompt("Informe a nota de sua AV1"));
+  av2 = Number(prompt("Informe a nota de sua AV2"));
+  //processamento de dados
+  mp = (av1+av2)/2;
+  console.log("Média parcial: " + mp.toFixed(1));
+  if(mp>=4){
+    av3 = Number(prompt("Informe a nota de sua AV3"));
+    mf = (av3+mp)/2;
+    console.log("Média Final: " + mf.toFixed(1));
+    if(mf>=5&&av3>=4){
+      mostra("Você foi aprovado!");
+          } else{
+            mostra("Infelizmente você foi reprovado.");
+          }
+  } else{
+    mostra("Infelizmente você não poderá fazer a AV3. Reprovado.");
+  }
+  //
+  //
+</script>

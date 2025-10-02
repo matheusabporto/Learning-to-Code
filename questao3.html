@@ -1,0 +1,48 @@
+Faça um programa que mostre o menu de opções a seguir, solicite a opção do usuário e os dados necessários para executar cada operação.
+Menu de opções:
+1. Somar dois números.
+2. Raiz quadrada de um número.
+<br><hr><br>
+
+<meta charset = "UTF-8">
+
+<script>
+
+//variaveis
+var di, n1, n2, n3, sn, rzn;
+
+//funcoes
+function pulaLinha(){
+document.write("<br>");
+}
+function mostra(frase){
+document.write(frase);
+pulaLinha();
+}
+
+//entrada de dados
+
+di = Number(prompt("Escolha a opção que você deseja: <br> 1. Somar dois números. <br> 2. Raiz quadrada de um número. <br> Atenção! Digite 1 para a OPÇÃO 1 e 2 para a OPÇÃO 2!"));
+
+
+//processamento de dados
+
+if (di == 1){
+	n1 = Number(prompt("Informe o primeiro número."));
+	n2 = Number(prompt("Informe o segundo número."));
+	sn = n1 + n2;
+	mostra("O resultado da soma dos dois números é de: " + sn);
+	} else if (di == 2){
+		n3 = Number(prompt("Informe o número que você deseja obter a raiz quadrada"));
+		rzn = n3**0.5;
+		mostra("O resultado da raiz quadrada do número é: " + rzn);
+		} else{
+			mostra("comando inserido foi inválido");
+			}
+
+//saida de dados
+
+
+</script>
+
+

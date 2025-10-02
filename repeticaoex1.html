@@ -1,0 +1,17 @@
+Faça um programa que verifique a altura de cada uma das 15 pessoas que formam um grupo a ser estudado. O programa deve informar o percentual de pessoas com altura igual ou superior a 1.70
+<br><hr><br>
+
+<script>
+  var n = 15;
+  //inicialização do contador de altura
+  var alturasup = 0;
+  while (n > 0){
+    var altura = Number(prompt("Informe a altura da pessoa, em metros"));
+    if (altura>=1.70){
+      alturasup = alturasup + 1; // ou altura sup = alturasup++
+    }
+    n = n - 1; // ou n = n--
+  }
+  var alturapercentual = (alturasup/15)*100;
+  document.write("O percentual de pessoas com altura igual ou superior a 1.70 é de: " + alturapercentual.toFixed(2) + " %");
+</script>
