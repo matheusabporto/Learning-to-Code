@@ -1,0 +1,24 @@
+Classe Abstrata
+- Classe que não pode ser instanciada diretamente;
+- Pode conter métodos concretos;
+- Pode conter métodos abstratos;
+
+
+public abstract Class Animal{
+private String nome;
+private int patas;
+public Animal(String nome, int patas){
+  this.nome = this;
+  this.patas = patas;
+  }
+
+  public void mover(){
+    System.out.println("Está movendo");
+  }
+
+  public abstract void emitirSom();
+}
+
+
+Criar classe Abstrata com veículo e um método abstrato mover(). 
+Crie subclasses Carro e Bicicleta, que sobrevescrevem mover();
