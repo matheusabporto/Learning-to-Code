@@ -19,6 +19,22 @@ public Animal(String nome, int patas){
   public abstract void emitirSom();
 }
 
+public class Gato extends Animal{
+public gato(string n, int p){
+  super(n,p);
+}
+
+public void emitirSom(){
+  system.out.println("miado");
+}
+
+}
+
+main
+
+Animal g = new Gato("a",4); // animal é tipo, do objeto instanciado
+Gato g2 = new Gato("b",4); // pode ser Gato tambem, que é tipo
+// Gato = new Animal("c",4); ----- XXXX NÃO PODE. CLASSE ABSTRATA NAO PODE INSTANCIAR OBJETOS
 
 Criar classe Abstrata com veículo e um método abstrato mover(). 
 Crie subclasses Carro e Bicicleta, que sobrevescrevem mover();
