@@ -38,3 +38,6 @@ Gato g2 = new Gato("b",4); // pode ser Gato tambem, que é tipo
 
 Criar classe Abstrata com veículo e um método abstrato mover(). 
 Crie subclasses Carro e Bicicleta, que sobrevescrevem mover();
+
+
+Antecipe-se, veja o que é Interface!
