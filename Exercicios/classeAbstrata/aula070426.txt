@@ -2,7 +2,7 @@ Classe Abstrata
 - Classe que não pode ser instanciada diretamente;
 - Pode conter métodos concretos;
 - Pode conter métodos abstratos;
-
+- métodos abstratos não podem ser instanciados também!
 
 public abstract Class Animal{
 private String nome;
