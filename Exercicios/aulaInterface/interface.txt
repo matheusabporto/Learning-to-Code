@@ -1,10 +1,10 @@
 # Learning-to-Code
 This is to track my progress while learning how to code
 
-- Interface é um contrato;
+- Interface é um contrato (comportamento);
 - Define o que deve ser feito, mas não como;
 - Todos os métodos de uma interface são abstratos e públicos por padrão.
-
+- uma classe pode implementar varios interfaces/comportamentos;
 
 public interface AnimalDomesticado {
 
