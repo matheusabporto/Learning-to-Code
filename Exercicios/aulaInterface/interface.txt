@@ -40,7 +40,7 @@ public class Animal{
 como funcionaria para herdar e impkementar:
 
 public class Gato extends Animal implements AnimalDomestico {
-    
+
     public void alimentar(){
         System.out.println("alimentando");
     }
@@ -50,3 +50,9 @@ public class Gato extends Animal implements AnimalDomestico {
     }
 
 }
+
+
+Crie uma classe abstrata Funcionario com atributos nome e salario e 1 método concreto.
+Crie subclasses Gerente e Estagiario.
+Crie interface Bonificacao com método calcularBonus()
+cada funcionario tem sua forma de calcular.
