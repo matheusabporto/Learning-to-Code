@@ -26,3 +26,27 @@ public class Gato implements AnimalDomesticado {
         System.out.println("Brincando");       
     }
 }
+
+
+
+=======
+
+agora imagine:
+
+public class Animal{
+    public int patas;
+}
+
+como funcionaria para herdar e impkementar:
+
+public class Gato extends Animal implements AnimalDomestico {
+    
+    public void alimentar(){
+        System.out.println("alimentando");
+    }
+
+    public void brincar(){
+        System.out.println("brincando");
+    }
+
+}
