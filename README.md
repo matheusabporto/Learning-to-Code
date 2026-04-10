@@ -1,2 +1,28 @@
 # Learning-to-Code
 This is to track my progress while learning how to code
+
+- Interface é um contrato;
+- Define o que deve ser feito, mas não como;
+- Todos os métodos de uma interface são abstratos e públicos por padrão.
+
+
+public interface AnimalDomesticado {
+
+    public void alimentar();
+    public void brincar();
+
+}
+
+Qualquer classe que implemente essa interface, é obrigada a definir
+esses métodos.
+
+public class Gato implements AnimalDomesticado {
+
+    public void alimentar(){
+        System.out.println("Alimentado");
+    }
+
+    public void brincar() {
+        System.out.println("Brincando");       
+    }
+}
