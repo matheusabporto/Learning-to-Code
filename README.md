@@ -57,19 +57,19 @@ Learning-to-Code/
 ---
 
 #### Aula: Classes — atributos e métodos (parte I)
-- [ ] **Exercício — Classe Pessoa:** Criar a classe `Pessoa` com atributos nome, ano de nascimento, peso, altura. Implementar métodos para calcular o IMC, a idade, a quantidade de água que a pessoa necessita beber por dia. Implementar método `mostra()` (void).
+- [x] **Exercício — Classe Pessoa:** Criar a classe `Pessoa` com atributos nome, ano de nascimento, peso, altura. Implementar métodos para calcular o IMC, a idade, a quantidade de água que a pessoa necessita beber por dia. Implementar método `mostra()` (void).
 
 ---
 
 #### Aula: Classes — atributos e métodos (parte II)
-- [ ] **Exercício — Classe Conta (v1):** Criar a classe `Conta` com atributos CPF do titular, número representativo do banco e saldo. Implementar método que retorna a bonificação do correntista (10% do saldo). Implementar métodos de saque, depósito e mostrar atributos.
-- [ ] **Exercício — Classe Conta (v2):** Modificar a classe `Conta` incluindo atributo que indica se o correntista é cliente especial ou não. Refazer o método de bonificação: 10% se especial, 5% se não.
-- [ ] **Exercício — Classe Conta (v3):** Implementar método que realiza a transferência de valor de uma conta para outra.
+- [x] **Exercício — Classe Conta (v1):** Criar a classe `Conta` com atributos CPF do titular, número representativo do banco e saldo. Implementar método que retorna a bonificação do correntista (10% do saldo). Implementar métodos de saque, depósito e mostrar atributos.
+- [x] **Exercício — Classe Conta (v2):** Modificar a classe `Conta` incluindo atributo que indica se o correntista é cliente especial ou não. Refazer o método de bonificação: 10% se especial, 5% se não.
+- [x] **Exercício — Classe Conta (v3):** Implementar método que realiza a transferência de valor de uma conta para outra.
 
 ---
 
 #### Aula: Classes — vetores de objetos
-- [ ] **Exercício — Classe Produto:** Criar a classe `Produto` com código (String), peso e valor (em reais). Implementar método `mostra()`. Criar um vetor de *n* produtos e implementar algoritmos para:
+- [x] **Exercício — Classe Produto:** Criar a classe `Produto` com código (String), peso e valor (em reais). Implementar método `mostra()`. Criar um vetor de *n* produtos e implementar algoritmos para:
   - Contar quantos produtos têm peso maior que 10 e valor menor que R$ 50,00;
   - Calcular a média dos pesos;
   - Capturar o produto mais leve e mostrar suas informações;
@@ -79,9 +79,9 @@ Learning-to-Code/
 ---
 
 #### Aula: Classes — construtores e encapsulamento (parte I)
-- [ ] **Exercício — Classe Pessoa (com encapsulamento):** Criar classe `Pessoa` com atributos privados: nome, CPF, ano de nascimento, altura. Criar gets/sets públicos, método para mostrar todos os dados e método para calcular a idade.
-- [ ] **Exercício — Classe Empregado:** Criar classe `Empregado` com atributos nome, sobrenome e salário mensal. Construtor que inicializa os três atributos (salário negativo → 0). Gets e sets para cada atributo. Método `forneceAumento()` que aumenta em 10% o salário. Na classe principal, criar dois objetos e exibir o salário anual de cada um.
-- [ ] **Exercício — Classe Invoice:** Criar classe `Invoice` para loja de informática, representando a fatura de um item vendido. Atributos: identificador (String), quantidade comprada e preço unitário. Usar construtor para inicializar (quantidade negativa → 0; preço negativo → 0.0). Implementar método que calcula o valor total da fatura, além de gets e sets.
+- [x] **Exercício — Classe Pessoa (com encapsulamento):** Criar classe `Pessoa` com atributos privados: nome, CPF, ano de nascimento, altura. Criar gets/sets públicos, método para mostrar todos os dados e método para calcular a idade.
+- [x] **Exercício — Classe Empregado:** Criar classe `Empregado` com atributos nome, sobrenome e salário mensal. Construtor que inicializa os três atributos (salário negativo → 0). Gets e sets para cada atributo. Método `forneceAumento()` que aumenta em 10% o salário. Na classe principal, criar dois objetos e exibir o salário anual de cada um.
+- [x] **Exercício — Classe Invoice:** Criar classe `Invoice` para loja de informática, representando a fatura de um item vendido. Atributos: identificador (String), quantidade comprada e preço unitário. Usar construtor para inicializar (quantidade negativa → 0; preço negativo → 0.0). Implementar método que calcula o valor total da fatura, além de gets e sets.
 
 ---
 
@@ -92,7 +92,7 @@ Learning-to-Code/
 ---
 
 #### Aula: Classes — construtores e encapsulamento (parte III)
-- [ ] **Exercício — Classe Elevador:** Criar a classe `Elevador` para armazenar informações de um elevador dentro de um prédio. Atributos: andar atual (térreo = 0), total de andares, capacidade (máximo de pessoas) e quantidade de pessoas presentes. Métodos: construtor (recebe capacidade e total de andares; começa no térreo e vazio), `entra()` (adiciona pessoa se houver espaço), `sai()` (remove pessoa se houver alguém), `sobe()` (não sobe se já estiver no último andar), `desce()` (não desce se já estiver no térreo).
+- [x] **Exercício — Classe Elevador:** Criar a classe `Elevador` para armazenar informações de um elevador dentro de um prédio. Atributos: andar atual (térreo = 0), total de andares, capacidade (máximo de pessoas) e quantidade de pessoas presentes. Métodos: construtor (recebe capacidade e total de andares; começa no térreo e vazio), `entra()` (adiciona pessoa se houver espaço), `sai()` (remove pessoa se houver alguém), `sobe()` (não sobe se já estiver no último andar), `desce()` (não desce se já estiver no térreo).
 - [ ] **Exercício — Classe Data:** Criar a classe `Data` com os atributos dia, mês e ano. Implementar: gets/sets; método toString() formatado como "dd/mm/aaaa"; método que checa se uma data é igual a outra; método `vemAntes()` que retorna true se a data da instância vem antes da passada como argumento (datas iguais retornam true). Na classe principal, inicializar um objeto e fazer chamadas a todos os métodos.
 - [ ] **Exercício — Classe Turma:** Implementar a classe `Turma` com um vetor de nomes dos alunos, um vetor de idades e um vetor de médias. Construtor e gets/sets associados. Métodos: `idadeMaisVelho()` (retorna a maior idade), `nomeMaisNovo()` (retorna o nome do aluno mais novo), `numeroAprovados()` (aluno aprovado com média ≥ 7.0).
 - [ ] **Exercício — Classe Imovel:** Uma imobiliária trabalha com casas (tipo 1) e apartamentos (tipo 2). Atributos: tipo, proprietário, tamanho (m²), se está em área nobre, ano de construção e valor de compra. Implementar: classe `Imovel` com construtor, gets/sets; método para calcular IPTU (regras na tabela do PDF); método para calcular o valor de venda (regras na tabela do PDF); método para calcular a idade do imóvel; método `mostra()`. Na classe principal: vetor de *n* imóveis; mostrar IPTUs e valores de venda; mostrar proprietários com imóveis de mais de 10 anos; quantidade de apartamentos e casas; média do tamanho de apartamentos em área nobre; menor IPTU de casa fora de área nobre; tamanho do imóvel com menor valor de venda.
