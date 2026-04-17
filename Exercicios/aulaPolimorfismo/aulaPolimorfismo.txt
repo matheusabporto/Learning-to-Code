@@ -1,0 +1,35 @@
+Polimorfismo
+
+-> Sobreposição(@override): Métodos de classes diferentes, com herança entre elas. Mesma assinatura.
+
+-> Sobrecarga: Métodos com diferentes assinaturas e mesmo nome dentro da mesma classe.
+
+-Classe possui sobreposição e sobrecarga, método é/são
+
+Assinatura do Método
+public(visibilidade) void(retorno) saque(nome do metodo)(int senha, double valor)(parametros)
+
+
+
+public class Animal{
+
+    public void emitirSom(){
+        System.out.println("som");
+    }
+    public void EmitirSom(String a){
+        System.out.println(a);
+    }
+    
+}
+
+public class Gato extends Animal {
+    @override
+    public void emitirSom(){
+        System.out.println("miado");
+    }
+
+    public void emitirSom(String a){
+        System.out.println(a);
+    }
+
+}
