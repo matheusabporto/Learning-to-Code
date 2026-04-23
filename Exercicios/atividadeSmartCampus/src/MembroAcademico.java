@@ -2,10 +2,10 @@ public abstract class MembroAcademico {
 
     // Atributos comuns a todos os membros acadêmicos
     protected String nome;
-    protected int  registro;
+    protected String registro;
 
     // Construtor
-    public MembroAcademico(String nome, int registro) {
+    public MembroAcademico(String nome, String registro) {
         this.nome = nome;
         this.registro = registro;
     }
@@ -19,11 +19,11 @@ public abstract class MembroAcademico {
         this.nome = nome;
     }
 
-    public int getRegistro() {
+    public String getRegistro() {
         return this.registro;
     }
 
-    public void setRegistro(int registro) {
+    public void setRegistro(String registro) {
         this.registro = registro;
     }
 
@@ -33,7 +33,7 @@ public abstract class MembroAcademico {
     public abstract void mostra();
 
 
-    //método bonus R.U
+   
     
     
 
