@@ -8,22 +8,21 @@ public class App {
 
         aluno1.mostra();
         aluno1.realizar2FA();
-        aluno1.bonusRU();
+        
 
         professor1.mostra();
         professor1.realizar2FA();
-        professor1.bonusRU();
+       
 
         tablet1.mostra();
         tablet1.realizar2FA();
 
         aluno2.mostra();
         // aluno2.realizar2FA(); -> nao da pra fazer porque membroacademino nao implementa esse metodo da classe de interface Autenticavel.
-        aluno2.bonusRU();
+        
 
         professor2.mostra();
         // professor2.realizar2FA(); -> nao da pra fazer porque membroacademino nao implementa esse metodo da classe de interface Autenticavel.
-        aluno2.bonusRU();
-        professor2.bonusRU();
+        
     }
 }
