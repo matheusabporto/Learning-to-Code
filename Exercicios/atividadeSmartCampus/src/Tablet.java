@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Tablet implements Autenticavel{
     //atibutos
-    protected String numeroPatrimonio;
+    private String numeroPatrimonio;
 
     //construtor
     public Tablet(String numeroPatrimonio){

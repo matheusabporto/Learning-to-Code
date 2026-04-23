@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Professor extends MembroAcademico implements Autenticavel {
 
     //atributos
-    protected double salario;
+    private double salario;
 
     //construtor
     public Professor(String nome, String registro, double salario){
