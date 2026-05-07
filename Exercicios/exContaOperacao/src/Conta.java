@@ -9,7 +9,7 @@ Na classe `Conta`, implementar o método `fazOperacao()` que realiza uma operaç
 Realizar *n* operações sobre uma conta na classe principal.
 
 */
-
+  
 //atributos
 private Cliente cliente;
 private double saldo;
@@ -50,9 +50,27 @@ public void setSaldo(double saldo) {
 //metodos
 
 public void imprimir() {
-    System.out.println(" Cliente : " + this.cliente.getCpf() + "-" + this.cliente.getEndereco());
+    System.out.println("Cliente : " + this.cliente.getCpf() + "-" + this.cliente.getEndereco());
     System.out.println("Saldo: " + this.saldo);
 }
 
+public void fazOperacao(Operacao operacao)  {
+    if (operacao.getTipo().equals("D")) {
+        this.saldo += operacao.getValor();
+        System.out.println("Depósito realizado com sucesso. Novo saldo: " + this.saldo);
+    } else if (operacao.getTipo().equals("R")) {
+        if(operacao.getValor() <= this.saldo) {
+            this.saldo -= operacao.getValor();
+            System.out.println("Retirada realizada com sucesso. Novo saldo: " + this.saldo);
+        } else {
+            System.out.println("Saldo insuficiente para realizar a retirada.");
+        }
+    } else {
+        System.out.println("Tipo de operação inválida. Use 'D' para depósito ou 'R' para retirada.");
+    }
 
 }
+        
+}
+
+

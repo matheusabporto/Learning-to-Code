@@ -102,8 +102,8 @@ Learning-to-Code/
 ### AV2
 
 #### Aula: Classes — relacionamento entre classes (parte I)
-- [ ] **Exercício — Cliente + Conta:** Implementar a classe `Cliente` com CPF e endereço (encapsulamento + método `imprimir()`). Implementar a classe `Conta` associada a um cliente, com saldo não negativo (encapsulamento + método `imprimir()`). Instanciar um objeto `Conta` na classe principal.
-- [ ] **Exercício — Operacao + fazOperacao:** Implementar a classe `Operacao` com tipo (D – depósito ou R – retirada) e valor associado. Na classe `Conta`, implementar o método `fazOperacao()` que realiza uma operação e atualiza o saldo. Realizar *n* operações sobre uma conta na classe principal.
+- [x] **Exercício — Cliente + Conta:** Implementar a classe `Cliente` com CPF e endereço (encapsulamento + método `imprimir()`). Implementar a classe `Conta` associada a um cliente, com saldo não negativo (encapsulamento + método `imprimir()`). Instanciar um objeto `Conta` na classe principal.
+- [x] **Exercício — Operacao + fazOperacao:** Implementar a classe `Operacao` com tipo (D – depósito ou R – retirada) e valor associado. Na classe `Conta`, implementar o método `fazOperacao()` que realiza uma operação e atualiza o saldo. Realizar *n* operações sobre uma conta na classe principal.
 
 ---
 
