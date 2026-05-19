@@ -40,7 +40,7 @@ public class Turma {
     public boolean inserirAluno(Aluno a){ //inserir um aluno na turma, ou seja, colocar o aluno no array de alunos
         for (int i=0;i<alunos.length;i++){ 
             if(alunos[i] == null){ //verificar se a posição do array está vazia, ou seja, se não tem nenhum aluno naquela posição
-                alunos[1] = a;
+                alunos[i] = a;
                 System.out.println("Aluno " + a.getNome() + "inserido com sucesso!"); //se encontrar uma posição vazia, ou seja, se tiver um null, insere o aluno naquela posição e imprime uma mensagem de sucesso")
                 return true; //se encontrar uma posição vazia, ou seja, se tiver um null, insere o aluno naquela posição e retorna true
             }

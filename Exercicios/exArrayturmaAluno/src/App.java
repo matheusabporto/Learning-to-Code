@@ -1,7 +1,7 @@
 public class App {
     public static void main(String[] args) throws Exception {
         
-        /* 
+        
         //criar uma turma com id 1 e capacidade para 3 alunos
         Turma turma1 = new Turma(1, 3); 
 
@@ -30,7 +30,7 @@ public class App {
         //listar os alunos da turma novamente para verificar se o aluno2 foi excluído
         System.out.println("Alunos da turma " + turma1.getIdTurma() + " após exclusão:"); //imprimir o id da turma para mostrar quais alunos pertencem a qual turma
         turma1.listarAlunos(); //chamar o método listarAlunos() da turma1 para mostrar as informações dos alunos que pertencem a turma1 após a exclusão do aluno2
-        */
+        
 
 
     }
