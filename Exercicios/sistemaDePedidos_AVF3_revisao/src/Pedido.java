@@ -41,6 +41,7 @@ public Pedido(Usuario usuario, int id, double valorInicial){
     this.produtos = new ArrayList<Produto>();
 }
 
+
 //metodos
 
 public void adicionarProduto(Produto p){
